@@ -1,0 +1,1 @@
+let studentlist = document.cookie;
