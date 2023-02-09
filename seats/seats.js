@@ -28,7 +28,7 @@ function getCookie(){
     return "";
 
 }
-
+//shuffle
 function shuffleCookie() {
     array=getCookie();
     let currentIndex = array.length,  randomIndex;
