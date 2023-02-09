@@ -1,6 +1,10 @@
 
 person=1;
 
+if (getCookie()==""){
+  writeCookie(Array(36).fill(["",""]));
+}
+
 displayCookie();
 function writeCookie(array){
     jsonarray=JSON.stringify(array);
@@ -22,7 +26,9 @@ function getCookie(){
       }
       if (c.indexOf(name) == 0) {
         jsonarray=c.substring(name.length, c.length);
-        return JSON.parse(jsonarray);
+        array= JSON.parse(jsonarray);
+
+        return array;
       }
     }
     return "";
@@ -53,14 +59,14 @@ function shuffleCookie() {
     //document.getElementById("1").innerHTML = "Nw text!";
 
     for (i=1;i<=array.length;i++){
-        document.getElementById(String(i)).innerHTML = array[i][0]+array[i][1];
+        document.getElementById(String(i)).innerHTML = array[i-1][0]+array[i-1][1];
     }
   }
 
   function displayprev(){
     document.getElementById("1").innerHTML = "Nw text!";
     firstname=document.getElementById("firstname").value;
-    lastname=document.getElementById("lasname").value;
+    lastname=document.getElementById("lastname").value;
     editCookie(person-1,);
     displayCookie();
     if(person==1){
