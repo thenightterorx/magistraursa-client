@@ -6,16 +6,23 @@ body {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/1920px-Foro_Romano_Musei_Capitolini_Roma.jpg');
 }
 </style>
+
   <style>
     .editor {
-      width: 50%;
+      width: 45%;
+      border-style: double;
+      border-color: red;
+      height: 100%;
+      float: left;
     }
     .studentarray {
       width: 50%;
+      height: 100%;
+      float: right;
     }
     .studentimage {
-      width: 50%;
-      height:100%;
+      width: 100%;
+      height:40%;
     }
     .center {
       display: flex;
@@ -44,6 +51,8 @@ body {
       width:30%;
     }
 
+
+
     .column {
       display: flex;
       flex-direction: column;
@@ -70,14 +79,47 @@ body {
     }
 
     .romans {
-        width:20%
+        width:20%;
           
     
     }
     .student {
-        width 25%
-        height 10%
-      padding 5px 5px
+        width: 25%;
+        height: 10%;
+      padding: 5px 5px;
+    }
+    .dropdown {
+      padding: 5px 5px;
+      align-items: center;
+    }
+
+    .row {
+      width:100%;
+      height: 9%;
+    }
+
+    .person {
+      border-style: dashed;
+      width: 25%;
+      height: 100%;
+      float: left;
+      font-size: medium;
+    }
+
+    .person1 {
+      border-style: dashed;
+      width: 25%;
+      height: 100%;
+      float: right;
+      font-size: medium;
+    }
+    .select {
+      width: 48%;
+      height: 10%;
+      background-color: #ffb900;
+      color: white;
+      display: inline;
+      text-align: center;
     }
   </style>
 </head>
@@ -92,9 +134,87 @@ body {
       <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEeELkyP1FNWlx_CpX5D7pji6oqF5aY7y2nw&usqp=CAU" alt="Column 1">
     </div>
     <div class="middle">
-      <div class="studentarray"> </div>
       <div class="editor"> 
+        <button class="select">prev</button>
+        <button class="select">next</button>
         <img class="studentimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRBSIPuo41xaMFdtLIie8NGRvkBQqK4tJnNw_kw8hh&s"></img>
+        <input type="text" id="firstname">first name</input>
+        <input type="text" id="lastname">last name</input>
+
+        <p>parameters:</p>
+        <select name="parameters" id="cannot" onchange="showInput" class="dropdown">
+          <option value="none">none</option>
+          <option value ="notstudent">cannot sit near student...</option>
+          <option value="corner">has to sit at corner...</option>
+          <option value="nearcorner">has to sit near corner...</option>
+          <option value="spot">has to sit at spot...</option>
+          <option value="row">must sit in row...</option>
+        </select>
+        <input type="text" id="paraminput"></input>
+      </div>
+
+      <div class="studentarray"> 
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+        <div class="row">
+          <button class="person"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+          <button class="person1"></button>
+        </div>
+
       </div>
     </div>
     <div class="column">
