@@ -64,7 +64,6 @@ function shuffleCookie() {
   }
 
   function displayprev(){
-    document.getElementById("1").innerHTML = "Nw text!";
     firstname=document.getElementById("firstname").value;
     lastname=document.getElementById("lastname").value;
     editCookie(person-1,);
