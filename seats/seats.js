@@ -1,5 +1,7 @@
 
+person=1;
 
+displayCookie();
 function writeCookie(array){
     jsonarray=JSON.stringify(array);
     const d = new Date();
@@ -48,6 +50,28 @@ function shuffleCookie() {
 
   function displayCookie(){
     array=getCookie();
+    //document.getElementById("1").innerHTML = "Nw text!";
+
+    for (i=1;i<=array.length;i++){
+        document.getElementById(String(i)).innerHTML = array[i][0]+array[i][1];
+    }
+  }
+
+  function displayprev(){
+    
+    displayCookie();
+  }
+
+  function displaynext(){
+
+    displayCookie();
     
   }
 
+  function editCookie(index,firstname,lastname){
+    array=getCookie();
+    array[index][0]=firstname;
+    array[index][1]=lastname;
+    writeCookie(array);
+
+  }
