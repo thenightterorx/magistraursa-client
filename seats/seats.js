@@ -73,6 +73,8 @@ function shuffleCookie() {
     }else{
         person--;
     }
+    document.getElementById("firstname").value = getCookie()[person-1][0];
+    document.getElementById("lastname").value = getCookie()[person-1][1];
   }
 
   function displaynext(){
@@ -85,6 +87,8 @@ function shuffleCookie() {
     }else{
         person++;
     }
+    document.getElementById("firstname").value = getCookie()[person-1][0];
+    document.getElementById("lastname").value = getCookie()[person-1][1];
   }
 
   document.getElementById("prev").onclick = displayprev;
