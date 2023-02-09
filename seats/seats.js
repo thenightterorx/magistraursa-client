@@ -52,6 +52,7 @@ function shuffleCookie() {
     }
   
     writeCookie(array);
+    displayCookie();
   }
 
   function displayCookie(){
