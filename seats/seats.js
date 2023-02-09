@@ -66,7 +66,7 @@ function shuffleCookie() {
   function displayprev(){
     firstname=document.getElementById("firstname").value;
     lastname=document.getElementById("lastname").value;
-    editCookie(person-1,);
+    editCookie(person-1,firstname,lastname);
     displayCookie();
     if(person==1){
         person=36;
