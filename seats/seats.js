@@ -60,13 +60,25 @@ function shuffleCookie() {
   function displayprev(){
     firstname=document.getElementById("firstname").value;
     lastname=document.getElementById("lasname").value;
-    editCookie(person-1,)
+    editCookie(person-1,);
     displayCookie();
+    if(person==1){
+        person=36;
+    }else{
+        person--;
+    }
   }
 
   function displaynext(){
-
+    firstname=document.getElementById("firstname").value;
+    lastname=document.getElementById("lasname").value;
+    editCookie(person-1,);
     displayCookie();
+    if(person==36){
+        person=1;
+    }else{
+        person++;
+    }
   }
 
 
