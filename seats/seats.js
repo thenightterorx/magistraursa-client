@@ -58,15 +58,18 @@ function shuffleCookie() {
   }
 
   function displayprev(){
-    
+    firstname=document.getElementById("firstname").value;
+    lastname=document.getElementById("lasname").value;
+    editCookie(person-1,)
     displayCookie();
   }
 
   function displaynext(){
 
     displayCookie();
-    
   }
+
+
 
   function editCookie(index,firstname,lastname){
     array=getCookie();
