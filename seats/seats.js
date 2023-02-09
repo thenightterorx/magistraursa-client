@@ -1,1 +1,1 @@
-let studentlist = document.cookie;
+document.getElementById("1").textContent='joe mongus';
