@@ -82,7 +82,8 @@ function shuffleCookie() {
     }
   }
 
-
+  document.getElementById("prev").onclick = displayprev;
+  document.getElementById("next").onclick = displaynext;
 
   function editCookie(index,firstname,lastname){
     array=getCookie();
