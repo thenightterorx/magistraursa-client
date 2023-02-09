@@ -72,7 +72,7 @@ function shuffleCookie() {
   function displaynext(){
     firstname=document.getElementById("firstname").value;
     lastname=document.getElementById("lasname").value;
-    editCookie(person-1,);
+    editCookie(person-1,firstname,lastname);
     displayCookie();
     if(person==36){
         person=1;
