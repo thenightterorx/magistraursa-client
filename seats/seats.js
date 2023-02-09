@@ -1,2 +1,2 @@
-document.getElementById("1").textContent='joe is mongus';
+document.getElementById("1").value='joe is mongus';
 //
