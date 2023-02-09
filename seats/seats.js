@@ -1,5 +1,5 @@
 buttonId="1";
-text="hewo";
+text="hewwo";
 
 
     if (document.getElementById)
