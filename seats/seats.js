@@ -1,4 +1,6 @@
 
+document.getElementById("firstname").value = "";
+document.getElementById("lastname").value = "";
 person=1;
 
 if (getCookie()==""){
@@ -62,6 +64,16 @@ function shuffleCookie() {
     for (i=1;i<=array.length;i++){
         document.getElementById(String(i)).innerHTML = array[i-1][0]+" "+array[i-1][1];
     }
+  }
+
+  function display(personid){
+    firstname=document.getElementById("firstname").value;
+    lastname=document.getElementById("lastname").value;
+    editCookie(person-1,firstname,lastname);
+    displayCookie();
+    person=personid;
+    document.getElementById("firstname").value = getCookie()[person-1][0];
+    document.getElementById("lastname").value = getCookie()[person-1][1];
   }
 
   function displayprev(){
