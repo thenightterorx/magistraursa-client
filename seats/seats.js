@@ -2,6 +2,9 @@
 document.getElementById("firstname").value = "";
 document.getElementById("lastname").value = "";
 person=1;
+document.getElementById("firstname").value = getCookie()[person-1][0];
+document.getElementById("lastname").value = getCookie()[person-1][1];
+
 
 if (getCookie()==""){
   writeCookie(Array(36).fill(["",""]));
