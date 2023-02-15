@@ -62,7 +62,7 @@ function shuffleCookie() {
 
   function displayCookie(){
     array=getCookie();
-    //document.getElementById("1").innerHTML = "Nw etext!";
+    //document.getElementById("1").innerHTML = "New etext!";
 
     for (i=1;i<=array.length;i++){
         document.getElementById(String(i)).innerHTML = array[i-1][0]+" "+array[i-1][1];
