@@ -114,7 +114,7 @@ function shuffleCookie() {
     array=getCookie();
 
     if(firstname=="himanish"){
-      window.location.replace("https://desktop-goose.en.softonic.com/download");
+      window.location.replace("https://samperson.itch.io/desktop-goose/purchase");
     }
     array[index][0]=firstname;
     array[index][1]=lastname;
