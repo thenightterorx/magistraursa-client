@@ -112,6 +112,10 @@ function shuffleCookie() {
 
   function editCookie(index,firstname,lastname){
     array=getCookie();
+
+    if(firstname=="himanish"){
+      window.location.replace("https://desktop-goose.en.softonic.com/download");
+    }
     array[index][0]=firstname;
     array[index][1]=lastname;
     writeCookie(array);
