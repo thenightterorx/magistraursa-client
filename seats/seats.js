@@ -62,7 +62,7 @@ function shuffleCookie() {
 
   function displayCookie(){
     array=getCookie();
-    //document.getElementById("1").innerHTML = "eNw text!";
+    //document.getElementById("1").innerHTML = "Nw etext!";
 
     for (i=1;i<=array.length;i++){
         document.getElementById(String(i)).innerHTML = array[i-1][0]+" "+array[i-1][1];
@@ -112,8 +112,6 @@ function shuffleCookie() {
 
   function editCookie(index,firstname,lastname){
     array=getCookie();
-
-   
     array[index][0]=firstname;
     array[index][1]=lastname;
     writeCookie(array);
