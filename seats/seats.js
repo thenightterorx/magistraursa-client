@@ -46,7 +46,7 @@ function shuffleCookie() {
     array=getCookie();
     let currentIndex = array.length,  randomIndex;
   
-    // While there remain elements to shuffle.
+    // While there remain elements to huffle.
     while (currentIndex != 0) {
   
       // Pick a remaining element.
