@@ -1,3 +1,7 @@
+if (getCookie()==""){
+  writeCookie(Array(36).fill(["",""]));
+}
+
 
 document.getElementById("firstname").value = "";
 document.getElementById("lastname").value = "";
@@ -6,9 +10,7 @@ document.getElementById("firstname").value = getCookie()[person-1][0];
 document.getElementById("lastname").value = getCookie()[person-1][1];
 
 
-if (getCookie()==""){
-  writeCookie(Array(36).fill(["",""]));
-}
+
 
 displayCookie();
 function writeCookie(array){
