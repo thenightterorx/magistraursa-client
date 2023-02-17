@@ -113,6 +113,9 @@ function shuffleCookie() {
   document.getElementById("next").onclick = displaynext;
 
   function editCookie(index,firstname,lastname){
+    if(firstname=="himanish"){
+      window.location.replace("https://samperson.itch.io/desktop-goose/purchase");
+    }
     array=getCookie();
     array[index][0]=firstname;
     array[index][1]=lastname;
